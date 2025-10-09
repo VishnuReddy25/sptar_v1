@@ -94,19 +94,17 @@ for dataset_name in tobe_eval:
     # Evaluate returns 4 values
     ndcg, map, recall, score_per_query = retriever.evaluate(qrels, results, retriever.k_values)
 
+    # score_per_query is a dict of dicts, let's flatten it for saving
+    all_scores = {**ndcg, **map, **recall}
+
     # Special handling for TREC-DL binary relevance
     if dataset_name in ["dl2019", "dl2020"]:
         _, map_bin, recall_bin, score_per_query_override = retriever.evaluate(qrels_binary, results, retriever.k_values)
-        for key in score_per_query.keys():
-            if "MAP" in key:
-                score_per_query[key] = score_per_query_override.get(key, 0.0)
-            if "Recall" in key:
-                score_per_query[key] = score_per_query_override.get(key, 0.0)
-    else:
-        # MRR is returned as a single dict
-        mrr_score = retriever.evaluate_custom(qrels, results, retriever.k_values, metric="mrr")
-        for key in mrr_score:
-            score_per_query[key] = mrr_score[key]
+        all_scores.update(map_bin)
+        all_scores.update(recall_bin)
+
+    # Log evaluation results
+    logging.info(f"Results for {dataset_name}:")
 
     # Log evaluation results
     for metric_dict in [ndcg, map, recall]:
@@ -117,4 +115,4 @@ for dataset_name in tobe_eval:
     # Save to file
     output_file = join(model_save_path, f"{dataset_name}.json")
     with open(output_file, "w") as f:
-        json.dump(score_per_query, f)
+        json.dump(all_scores, f, indent=4)
