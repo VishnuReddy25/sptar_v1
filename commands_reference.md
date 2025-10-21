@@ -14,3 +14,15 @@ docker run -it --rm -e JAVA_OPTS="-Xmx8g" -p 8002:8000 beir/pyserini-fastapi
 #for inpair DPR
 
 python zhiyuan/dpr_eval.py --dataset_name fiqa --version v1 --gpu_id 0 --train_num 50 --weak_num 100k --exp_names p_written_100k_vicuna_prompt_2_filtered_70
+
+
+#21-10-2025
+
+python zhiyuan/retriever/dpr/train/train_sbert.py \
+  --dataset_name fiqa \
+  --version v1 \
+  --train_num 50 \
+  --weak_num 100k \
+  --exp_name llama_7b_100k_fixed_v3_best_llama_prompt_2_filtered_70 \
+  --num_epochs 2 \
+  --model_name BAAI/bge-base-en-v1.5

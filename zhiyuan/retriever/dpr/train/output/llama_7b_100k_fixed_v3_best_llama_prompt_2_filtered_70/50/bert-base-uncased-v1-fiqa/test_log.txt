@@ -86,3 +86,89 @@
 2025-10-09 07:48:43 - Recall@300: 0.6914
 2025-10-09 07:48:43 - Recall@500: 0.7485
 2025-10-09 07:48:43 - Recall@1000: 0.8188
+2025-10-21 09:26:55 - Load pretrained SentenceTransformer: /home/aiml_cse/vishnu/sptar_loss/sptar_v1/zhiyuan/retriever/dpr/train/output/llama_7b_100k_fixed_v3_best_llama_prompt_2_filtered_70/50/BAAI-bge-base-en-v1.5-v1-fiqa
+2025-10-21 09:26:56 - Use pytorch device: cuda
+2025-10-21 09:26:56 - Loading Corpus...
+2025-10-21 09:26:56 - Loaded 57638 TEST Documents.
+2025-10-21 09:26:56 - Doc Example: {'text': "I'm not saying I don't like the idea of on-the-job training too, but you can't expect the company to do that. Training workers is not their job - they're building software. Perhaps educational systems in the U.S. (or their students) should worry a little about getting marketable skills in exchange for their massive investment in education, rather than getting out with thousands in student debt and then complaining that they aren't qualified to do anything.", 'title': ''}
+2025-10-21 09:26:56 - Loading Queries...
+2025-10-21 09:26:56 - Loaded 648 TEST Queries.
+2025-10-21 09:26:56 - Query Example: How to deposit a cheque issued to an associate in my business into my business account?
+2025-10-21 09:26:56 - Encoding Queries...
+2025-10-21 09:26:59 - Sorting Corpus by document length (Longest first)...
+2025-10-21 09:26:59 - Encoding Corpus in batches... Warning: This might take a while!
+2025-10-21 09:26:59 - Scoring Function: Cosine Similarity (cos_sim)
+2025-10-21 09:26:59 - Encoding Batch 1/1...
+2025-10-21 09:35:49 - Retriever evaluation for dataset fiqa
+2025-10-21 09:35:49 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ignore_identical_ids=False`` to ignore this.
+2025-10-21 09:35:49 - 
+
+2025-10-21 09:35:49 - NDCG@1: 0.3596
+2025-10-21 09:35:49 - NDCG@3: 0.3404
+2025-10-21 09:35:49 - NDCG@5: 0.3545
+2025-10-21 09:35:49 - NDCG@10: 0.3816
+2025-10-21 09:35:49 - NDCG@100: 0.4525
+2025-10-21 09:35:49 - NDCG@300: 0.4719
+2025-10-21 09:35:49 - NDCG@500: 0.4784
+2025-10-21 09:35:49 - NDCG@1000: 0.4853
+2025-10-21 09:35:49 - 
+
+2025-10-21 09:35:49 - MAP@1: 0.1878
+2025-10-21 09:35:49 - MAP@3: 0.2632
+2025-10-21 09:35:49 - MAP@5: 0.2861
+2025-10-21 09:35:49 - MAP@10: 0.3050
+2025-10-21 09:35:49 - MAP@100: 0.3244
+2025-10-21 09:35:49 - MAP@300: 0.3259
+2025-10-21 09:35:49 - MAP@500: 0.3261
+2025-10-21 09:35:49 - MAP@1000: 0.3263
+2025-10-21 09:35:49 - 
+
+2025-10-21 09:35:49 - Recall@1: 0.1878
+2025-10-21 09:35:49 - Recall@3: 0.3117
+2025-10-21 09:35:49 - Recall@5: 0.3696
+2025-10-21 09:35:49 - Recall@10: 0.4527
+2025-10-21 09:35:49 - Recall@100: 0.7169
+2025-10-21 09:35:49 - Recall@300: 0.8229
+2025-10-21 09:35:49 - Recall@500: 0.8649
+2025-10-21 09:35:49 - Recall@1000: 0.9116
+2025-10-21 09:35:49 - 
+
+2025-10-21 09:35:49 - P@1: 0.3596
+2025-10-21 09:35:49 - P@3: 0.2274
+2025-10-21 09:35:49 - P@5: 0.1719
+2025-10-21 09:35:49 - P@10: 0.1079
+2025-10-21 09:35:49 - P@100: 0.0180
+2025-10-21 09:35:49 - P@300: 0.0070
+2025-10-21 09:35:49 - P@500: 0.0045
+2025-10-21 09:35:49 - P@1000: 0.0024
+2025-10-21 09:35:49 - Results for fiqa:
+2025-10-21 09:35:49 - 
+
+2025-10-21 09:35:49 - NDCG@1: 0.3596
+2025-10-21 09:35:49 - NDCG@3: 0.3404
+2025-10-21 09:35:49 - NDCG@5: 0.3545
+2025-10-21 09:35:49 - NDCG@10: 0.3816
+2025-10-21 09:35:49 - NDCG@100: 0.4525
+2025-10-21 09:35:49 - NDCG@300: 0.4719
+2025-10-21 09:35:49 - NDCG@500: 0.4784
+2025-10-21 09:35:49 - NDCG@1000: 0.4853
+2025-10-21 09:35:49 - 
+
+2025-10-21 09:35:49 - MAP@1: 0.1878
+2025-10-21 09:35:49 - MAP@3: 0.2632
+2025-10-21 09:35:49 - MAP@5: 0.2861
+2025-10-21 09:35:49 - MAP@10: 0.3050
+2025-10-21 09:35:49 - MAP@100: 0.3244
+2025-10-21 09:35:49 - MAP@300: 0.3259
+2025-10-21 09:35:49 - MAP@500: 0.3261
+2025-10-21 09:35:49 - MAP@1000: 0.3263
+2025-10-21 09:35:49 - 
+
+2025-10-21 09:35:49 - Recall@1: 0.1878
+2025-10-21 09:35:49 - Recall@3: 0.3117
+2025-10-21 09:35:49 - Recall@5: 0.3696
+2025-10-21 09:35:49 - Recall@10: 0.4527
+2025-10-21 09:35:49 - Recall@100: 0.7169
+2025-10-21 09:35:49 - Recall@300: 0.8229
+2025-10-21 09:35:49 - Recall@500: 0.8649
+2025-10-21 09:35:49 - Recall@1000: 0.9116

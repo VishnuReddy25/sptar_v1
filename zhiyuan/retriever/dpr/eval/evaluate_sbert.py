@@ -57,6 +57,7 @@ data_dir = join(zhiyuan_path, "datasets")
 raw_dir = join(data_dir, "raw")
 beir_dir = join(raw_dir, "beir")
 
+model_save_path = r"/home/aiml_cse/vishnu/sptar_loss/sptar_v1/zhiyuan/retriever/dpr/train/output/llama_7b_100k_fixed_v3_best_llama_prompt_2_filtered_70/50/BAAI-bge-base-en-v1.5-v1-fiqa"
 # Load model
 model = DRES(models.SentenceBERT(model_save_path), batch_size=256, corpus_chunk_size=100000)
 retriever = EvaluateRetrieval(model, k_values=[1, 3, 5, 10, 100, 300, 500, 1000], score_function="cos_sim")
