@@ -1,3 +1,109 @@
 2025-10-21 05:24:46 - Using model path: /home/aiml_cse/vishnu/sptar_loss/sptar_v1/zhiyuan/retriever/dpr/train/output/llama_7b_100k_fixed_v3_best_llama_prompt_2_filtered_70/50/bert-base-uncased-v1-fiqa
 2025-10-21 05:24:46 - Load pretrained SentenceTransformer: /home/aiml_cse/vishnu/sptar_loss/sptar_v1/zhiyuan/retriever/dpr/train/output/llama_7b_100k_fixed_v3_best_llama_prompt_2_filtered_70/50/bert-base-uncased-v1-fiqa
 2025-10-21 05:24:46 - No sentence-transformers model found with name /home/aiml_cse/vishnu/sptar_loss/sptar_v1/zhiyuan/retriever/dpr/train/output/llama_7b_100k_fixed_v3_best_llama_prompt_2_filtered_70/50/bert-base-uncased-v1-fiqa. Creating a new one with MEAN pooling.
+2025-10-22 03:58:34 - Using model path: /home/aiml_cse/vishnu/sptar_loss/sptar_v1/zhiyuan/retriever/dpr/train/output/llama_7b_100k_fixed_v3_best_llama_prompt_2_filtered_70/50/bert-base-uncased-v1-fiqa
+2025-10-22 03:58:34 - Load pretrained SentenceTransformer: /home/aiml_cse/vishnu/sptar_loss/sptar_v1/zhiyuan/retriever/dpr/train/output/llama_7b_100k_fixed_v3_best_llama_prompt_2_filtered_70/50/bert-base-uncased-v1-fiqa
+2025-10-22 03:58:36 - Use pytorch device: cuda
+2025-10-22 03:58:36 - Loading Corpus...
+2025-10-22 03:58:36 - Loaded 57638 TEST Documents.
+2025-10-22 03:58:36 - Doc Example: {'text': "I'm not saying I don't like the idea of on-the-job training too, but you can't expect the company to do that. Training workers is not their job - they're building software. Perhaps educational systems in the U.S. (or their students) should worry a little about getting marketable skills in exchange for their massive investment in education, rather than getting out with thousands in student debt and then complaining that they aren't qualified to do anything.", 'title': ''}
+2025-10-22 03:58:36 - Loading Queries...
+2025-10-22 03:58:36 - Loaded 648 TEST Queries.
+2025-10-22 03:58:36 - Query Example: How to deposit a cheque issued to an associate in my business into my business account?
+2025-10-22 03:58:36 - Encoding Queries...
+2025-10-22 03:58:41 - Sorting Corpus by document length (Longest first)...
+2025-10-22 03:58:41 - Encoding Corpus in batches... Warning: This might take a while!
+2025-10-22 03:58:41 - Scoring Function: Cosine Similarity (cos_sim)
+2025-10-22 03:58:41 - Encoding Batch 1/1...
+2025-10-22 04:09:28 - --- Evaluation for dataset: fiqa ---
+2025-10-22 04:09:28 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ignore_identical_ids=False`` to ignore this.
+2025-10-22 04:09:29 - 
+
+2025-10-22 04:09:29 - NDCG@1: 0.2099
+2025-10-22 04:09:29 - NDCG@3: 0.2067
+2025-10-22 04:09:29 - NDCG@5: 0.2152
+2025-10-22 04:09:29 - NDCG@10: 0.2349
+2025-10-22 04:09:29 - NDCG@100: 0.3079
+2025-10-22 04:09:29 - NDCG@300: 0.3304
+2025-10-22 04:09:29 - NDCG@500: 0.3408
+2025-10-22 04:09:29 - NDCG@1000: 0.3495
+2025-10-22 04:09:29 - 
+
+2025-10-22 04:09:29 - MAP@1: 0.1087
+2025-10-22 04:09:29 - MAP@3: 0.1556
+2025-10-22 04:09:29 - MAP@5: 0.1673
+2025-10-22 04:09:29 - MAP@10: 0.1789
+2025-10-22 04:09:29 - MAP@100: 0.1955
+2025-10-22 04:09:29 - MAP@300: 0.1971
+2025-10-22 04:09:29 - MAP@500: 0.1975
+2025-10-22 04:09:29 - MAP@1000: 0.1977
+2025-10-22 04:09:29 - 
+
+2025-10-22 04:09:29 - Recall@1: 0.1087
+2025-10-22 04:09:29 - Recall@3: 0.1920
+2025-10-22 04:09:29 - Recall@5: 0.2302
+2025-10-22 04:09:29 - Recall@10: 0.2909
+2025-10-22 04:09:29 - Recall@100: 0.5726
+2025-10-22 04:09:29 - Recall@300: 0.6953
+2025-10-22 04:09:29 - Recall@500: 0.7656
+2025-10-22 04:09:29 - Recall@1000: 0.8277
+2025-10-22 04:09:29 - 
+
+2025-10-22 04:09:29 - P@1: 0.2099
+2025-10-22 04:09:29 - P@3: 0.1399
+2025-10-22 04:09:29 - P@5: 0.1043
+2025-10-22 04:09:29 - P@10: 0.0673
+2025-10-22 04:09:29 - P@100: 0.0140
+2025-10-22 04:09:29 - P@300: 0.0059
+2025-10-22 04:09:29 - P@500: 0.0039
+2025-10-22 04:09:29 - P@1000: 0.0021
+2025-10-22 04:09:29 - 
+
+2025-10-22 04:09:29 - MRR@1: 0.2099
+2025-10-22 04:09:29 - MRR@3: 0.2621
+2025-10-22 04:09:29 - MRR@5: 0.2763
+2025-10-22 04:09:29 - MRR@10: 0.2864
+2025-10-22 04:09:29 - MRR@100: 0.2985
+2025-10-22 04:09:29 - MRR@300: 0.2991
+2025-10-22 04:09:29 - MRR@500: 0.2992
+2025-10-22 04:09:29 - MRR@1000: 0.2993
+2025-10-22 04:09:29 - 
+
+2025-10-22 04:09:29 - NDCG@1: 0.2099
+2025-10-22 04:09:29 - NDCG@3: 0.2067
+2025-10-22 04:09:29 - NDCG@5: 0.2152
+2025-10-22 04:09:29 - NDCG@10: 0.2349
+2025-10-22 04:09:29 - NDCG@100: 0.3079
+2025-10-22 04:09:29 - NDCG@300: 0.3304
+2025-10-22 04:09:29 - NDCG@500: 0.3408
+2025-10-22 04:09:29 - NDCG@1000: 0.3495
+2025-10-22 04:09:29 - MRR@1: 0.2099
+2025-10-22 04:09:29 - MRR@3: 0.2621
+2025-10-22 04:09:29 - MRR@5: 0.2763
+2025-10-22 04:09:29 - MRR@10: 0.2864
+2025-10-22 04:09:29 - MRR@100: 0.2985
+2025-10-22 04:09:29 - MRR@300: 0.2991
+2025-10-22 04:09:29 - MRR@500: 0.2992
+2025-10-22 04:09:29 - MRR@1000: 0.2993
+2025-10-22 04:09:29 - 
+
+2025-10-22 04:09:29 - MAP@1: 0.1087
+2025-10-22 04:09:29 - MAP@3: 0.1556
+2025-10-22 04:09:29 - MAP@5: 0.1673
+2025-10-22 04:09:29 - MAP@10: 0.1789
+2025-10-22 04:09:29 - MAP@100: 0.1955
+2025-10-22 04:09:29 - MAP@300: 0.1971
+2025-10-22 04:09:29 - MAP@500: 0.1975
+2025-10-22 04:09:29 - MAP@1000: 0.1977
+2025-10-22 04:09:29 - 
+
+2025-10-22 04:09:29 - Recall@1: 0.1087
+2025-10-22 04:09:29 - Recall@3: 0.1920
+2025-10-22 04:09:29 - Recall@5: 0.2302
+2025-10-22 04:09:29 - Recall@10: 0.2909
+2025-10-22 04:09:29 - Recall@100: 0.5726
+2025-10-22 04:09:29 - Recall@300: 0.6953
+2025-10-22 04:09:29 - Recall@500: 0.7656
+2025-10-22 04:09:29 - Recall@1000: 0.8277
+2025-10-22 04:09:29 - Saving evaluation results to: /home/aiml_cse/vishnu/sptar_loss/sptar_v1/zhiyuan/retriever/dpr/train/output/llama_7b_100k_fixed_v3_best_llama_prompt_2_filtered_70/50/bert-base-uncased-v1-fiqa/fiqa.json
+2025-10-22 04:09:29 - Evaluation complete!

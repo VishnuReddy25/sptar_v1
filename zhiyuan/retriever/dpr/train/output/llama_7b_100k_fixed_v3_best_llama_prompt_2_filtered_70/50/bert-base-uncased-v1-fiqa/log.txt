@@ -1,0 +1,139 @@
+2025-10-21 09:52:14 - Loading Corpus...
+2025-10-21 09:52:14 - Loaded 57638 Documents.
+2025-10-21 09:52:14 - Doc Example: {'text': "I'm not saying I don't like the idea of on-the-job training too, but you can't expect the company to do that. Training workers is not their job - they're building software. Perhaps educational systems in the U.S. (or their students) should worry a little about getting marketable skills in exchange for their massive investment in education, rather than getting out with thousands in student debt and then complaining that they aren't qualified to do anything.", 'title': ''}
+2025-10-21 09:52:14 - Loading Golden Queries...
+2025-10-21 09:52:14 - Loading Weak Queries...
+2025-10-21 09:52:14 - Loading Golden Qrels...
+2025-10-21 09:52:14 - Loading Weak Qrels...
+2025-10-21 09:52:14 - Loaded 24558 Golden+Weak Queries.
+2025-10-21 09:52:14 - Golden+Weak Query Example: Sales Tax Licence/Permit - When is it required and how can I make a use of it as a non-US resident selling in USA?
+2025-10-21 09:52:14 - Loading Corpus...
+2025-10-21 09:52:14 - Loaded 57638 Documents.
+2025-10-21 09:52:14 - Doc Example: {'text': "I'm not saying I don't like the idea of on-the-job training too, but you can't expect the company to do that. Training workers is not their job - they're building software. Perhaps educational systems in the U.S. (or their students) should worry a little about getting marketable skills in exchange for their massive investment in education, rather than getting out with thousands in student debt and then complaining that they aren't qualified to do anything.", 'title': ''}
+2025-10-21 09:52:14 - Loading Queries...
+2025-10-21 09:52:14 - Loaded 500 Queries.
+2025-10-21 09:52:14 - Query Example: Claiming business expenses for a business with no income
+2025-10-21 09:52:14 - Loaded 24894 training pairs.
+2025-10-21 09:52:14 - Loaded 24894 training pairs.
+2025-10-21 09:52:14 - Dev set contains 57638 documents and 500 queries
+2025-10-21 09:52:16 - Use pytorch device: cuda
+2025-10-21 09:52:16 - GPU memory before training: 0.00 GB
+2025-10-21 09:52:16 - Starting training...
+2025-10-21 10:58:45 - Save model to /home/aiml_cse/vishnu/sptar_loss/sptar_v1/zhiyuan/retriever/dpr/train/output/llama_7b_100k_fixed_v3_best_llama_prompt_2_filtered_70/50/bert-base-uncased-v1-fiqa/778
+2025-10-21 10:58:46 - Information Retrieval Evaluation on fiqa dataset after epoch 0:
+2025-10-21 11:12:48 - Queries: 500
+2025-10-21 11:12:48 - Corpus: 57638
+
+2025-10-21 11:12:48 - Score-Function: cos_sim
+2025-10-21 11:12:48 - Accuracy@1: 21.00%
+2025-10-21 11:12:48 - Accuracy@3: 32.60%
+2025-10-21 11:12:48 - Accuracy@5: 39.20%
+2025-10-21 11:12:48 - Accuracy@10: 48.00%
+2025-10-21 11:12:48 - Precision@1: 21.00%
+2025-10-21 11:12:48 - Precision@3: 12.80%
+2025-10-21 11:12:48 - Precision@5: 9.92%
+2025-10-21 11:12:48 - Precision@10: 6.64%
+2025-10-21 11:12:48 - Recall@1: 10.91%
+2025-10-21 11:12:48 - Recall@3: 18.48%
+2025-10-21 11:12:48 - Recall@5: 22.63%
+2025-10-21 11:12:48 - Recall@10: 29.70%
+2025-10-21 11:12:48 - MRR@10: 0.2880
+2025-10-21 11:12:48 - NDCG@10: 0.2336
+2025-10-21 11:12:48 - MAP@100: 0.1885
+2025-10-21 11:12:48 - Score-Function: dot_score
+2025-10-21 11:12:48 - Accuracy@1: 12.20%
+2025-10-21 11:12:48 - Accuracy@3: 22.40%
+2025-10-21 11:12:48 - Accuracy@5: 27.60%
+2025-10-21 11:12:48 - Accuracy@10: 34.40%
+2025-10-21 11:12:48 - Precision@1: 12.20%
+2025-10-21 11:12:48 - Precision@3: 8.33%
+2025-10-21 11:12:48 - Precision@5: 6.64%
+2025-10-21 11:12:48 - Precision@10: 4.68%
+2025-10-21 11:12:48 - Recall@1: 6.22%
+2025-10-21 11:12:48 - Recall@3: 11.54%
+2025-10-21 11:12:48 - Recall@5: 14.80%
+2025-10-21 11:12:48 - Recall@10: 20.13%
+2025-10-21 11:12:48 - MRR@10: 0.1859
+2025-10-21 11:12:48 - NDCG@10: 0.1507
+2025-10-21 11:12:48 - MAP@100: 0.1236
+2025-10-21 11:12:48 - Save model to /home/aiml_cse/vishnu/sptar_loss/sptar_v1/zhiyuan/retriever/dpr/train/output/llama_7b_100k_fixed_v3_best_llama_prompt_2_filtered_70/50/bert-base-uncased-v1-fiqa
+2025-10-21 12:20:20 - Save model to /home/aiml_cse/vishnu/sptar_loss/sptar_v1/zhiyuan/retriever/dpr/train/output/llama_7b_100k_fixed_v3_best_llama_prompt_2_filtered_70/50/bert-base-uncased-v1-fiqa/1556
+2025-10-21 12:20:21 - Information Retrieval Evaluation on fiqa dataset after epoch 1:
+2025-10-21 12:33:33 - Queries: 500
+2025-10-21 12:33:33 - Corpus: 57638
+
+2025-10-21 12:33:33 - Score-Function: cos_sim
+2025-10-21 12:33:33 - Accuracy@1: 22.80%
+2025-10-21 12:33:33 - Accuracy@3: 35.00%
+2025-10-21 12:33:33 - Accuracy@5: 40.60%
+2025-10-21 12:33:33 - Accuracy@10: 48.00%
+2025-10-21 12:33:33 - Precision@1: 22.80%
+2025-10-21 12:33:33 - Precision@3: 13.93%
+2025-10-21 12:33:33 - Precision@5: 10.56%
+2025-10-21 12:33:33 - Precision@10: 6.80%
+2025-10-21 12:33:33 - Recall@1: 12.18%
+2025-10-21 12:33:33 - Recall@3: 19.94%
+2025-10-21 12:33:33 - Recall@5: 24.63%
+2025-10-21 12:33:33 - Recall@10: 31.08%
+2025-10-21 12:33:33 - MRR@10: 0.3043
+2025-10-21 12:33:33 - NDCG@10: 0.2491
+2025-10-21 12:33:33 - MAP@100: 0.2058
+2025-10-21 12:33:33 - Score-Function: dot_score
+2025-10-21 12:33:33 - Accuracy@1: 14.80%
+2025-10-21 12:33:33 - Accuracy@3: 23.60%
+2025-10-21 12:33:33 - Accuracy@5: 30.40%
+2025-10-21 12:33:33 - Accuracy@10: 41.60%
+2025-10-21 12:33:33 - Precision@1: 14.80%
+2025-10-21 12:33:33 - Precision@3: 8.93%
+2025-10-21 12:33:33 - Precision@5: 7.36%
+2025-10-21 12:33:33 - Precision@10: 5.46%
+2025-10-21 12:33:33 - Recall@1: 7.21%
+2025-10-21 12:33:33 - Recall@3: 12.52%
+2025-10-21 12:33:33 - Recall@5: 17.07%
+2025-10-21 12:33:33 - Recall@10: 25.65%
+2025-10-21 12:33:33 - MRR@10: 0.2162
+2025-10-21 12:33:33 - NDCG@10: 0.1797
+2025-10-21 12:33:33 - MAP@100: 0.1403
+2025-10-21 12:33:33 - Save model to /home/aiml_cse/vishnu/sptar_loss/sptar_v1/zhiyuan/retriever/dpr/train/output/llama_7b_100k_fixed_v3_best_llama_prompt_2_filtered_70/50/bert-base-uncased-v1-fiqa
+2025-10-21 13:40:59 - Save model to /home/aiml_cse/vishnu/sptar_loss/sptar_v1/zhiyuan/retriever/dpr/train/output/llama_7b_100k_fixed_v3_best_llama_prompt_2_filtered_70/50/bert-base-uncased-v1-fiqa/2334
+2025-10-21 13:41:00 - Information Retrieval Evaluation on fiqa dataset after epoch 2:
+2025-10-21 13:54:35 - Queries: 500
+2025-10-21 13:54:35 - Corpus: 57638
+
+2025-10-21 13:54:35 - Score-Function: cos_sim
+2025-10-21 13:54:35 - Accuracy@1: 23.60%
+2025-10-21 13:54:35 - Accuracy@3: 36.00%
+2025-10-21 13:54:35 - Accuracy@5: 41.20%
+2025-10-21 13:54:35 - Accuracy@10: 48.40%
+2025-10-21 13:54:35 - Precision@1: 23.60%
+2025-10-21 13:54:35 - Precision@3: 14.33%
+2025-10-21 13:54:35 - Precision@5: 10.72%
+2025-10-21 13:54:35 - Precision@10: 6.92%
+2025-10-21 13:54:35 - Recall@1: 12.59%
+2025-10-21 13:54:35 - Recall@3: 20.74%
+2025-10-21 13:54:35 - Recall@5: 25.03%
+2025-10-21 13:54:35 - Recall@10: 31.01%
+2025-10-21 13:54:35 - MRR@10: 0.3111
+2025-10-21 13:54:35 - NDCG@10: 0.2527
+2025-10-21 13:54:35 - MAP@100: 0.2097
+2025-10-21 13:54:35 - Score-Function: dot_score
+2025-10-21 13:54:35 - Accuracy@1: 15.40%
+2025-10-21 13:54:35 - Accuracy@3: 24.80%
+2025-10-21 13:54:35 - Accuracy@5: 30.80%
+2025-10-21 13:54:35 - Accuracy@10: 41.60%
+2025-10-21 13:54:35 - Precision@1: 15.40%
+2025-10-21 13:54:35 - Precision@3: 9.20%
+2025-10-21 13:54:35 - Precision@5: 7.56%
+2025-10-21 13:54:35 - Precision@10: 5.62%
+2025-10-21 13:54:35 - Recall@1: 7.88%
+2025-10-21 13:54:35 - Recall@3: 13.31%
+2025-10-21 13:54:35 - Recall@5: 17.64%
+2025-10-21 13:54:35 - Recall@10: 26.01%
+2025-10-21 13:54:35 - MRR@10: 0.2213
+2025-10-21 13:54:35 - NDCG@10: 0.1856
+2025-10-21 13:54:35 - MAP@100: 0.1467
+2025-10-21 13:54:35 - Save model to /home/aiml_cse/vishnu/sptar_loss/sptar_v1/zhiyuan/retriever/dpr/train/output/llama_7b_100k_fixed_v3_best_llama_prompt_2_filtered_70/50/bert-base-uncased-v1-fiqa
+2025-10-21 13:54:35 - Save model to /home/aiml_cse/vishnu/sptar_loss/sptar_v1/zhiyuan/retriever/dpr/train/output/llama_7b_100k_fixed_v3_best_llama_prompt_2_filtered_70/50/bert-base-uncased-v1-fiqa/2334
+2025-10-21 13:54:35 - Training complete. Saving final model to /home/aiml_cse/vishnu/sptar_loss/sptar_v1/zhiyuan/retriever/dpr/train/output/llama_7b_100k_fixed_v3_best_llama_prompt_2_filtered_70/50/bert-base-uncased-v1-fiqa
+2025-10-21 13:54:35 - Save model to /home/aiml_cse/vishnu/sptar_loss/sptar_v1/zhiyuan/retriever/dpr/train/output/llama_7b_100k_fixed_v3_best_llama_prompt_2_filtered_70/50/bert-base-uncased-v1-fiqa
+2025-10-21 13:54:36 - Final model saved successfully.
